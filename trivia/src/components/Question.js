@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import PreviousQuestion from "../buttons/PreviousQuestion";
 import NextQuestion from "../buttons/NextQuestion";
 import arrayShuffle from "array-shuffle";
 import Choices from "./Choices";
-import { CorrectAnswersContext } from "../context/correct-answers";
+
 import Troll from "../buttons/Troll";
 
 const Question = ({ question, id }) => {
@@ -14,8 +14,6 @@ const Question = ({ question, id }) => {
   const answersArray = [...question.incorrectAnswers, question.correctAnswer];
   //shuffle answersArray
   const shuffledAnswers = arrayShuffle(answersArray);
-
-  const [correctAnswers, setCorrectAnswers] = useContext(CorrectAnswersContext);
 
   return (
     <div className="question-page">
