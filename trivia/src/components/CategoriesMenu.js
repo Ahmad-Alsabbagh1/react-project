@@ -25,16 +25,10 @@ const CategoriesMenu = () => {
       <Select
         options={options}
         isMulti
-        onChange={(e) => {
-          e.forEach((category) => {
-            if (!categories.includes(category.value)) {
-              return setCategories([...categories, category.value]);
-            }
-            if (categories.includes(category.value)) {
-              return setCategories(
-                categories.filter((category) => category !== category.value)
-              );
-            }
+        onChange={(selected) => {
+          setCategories([]);
+          selected.forEach((category) => {
+            setCategories([...categories, category.value]);
           });
         }}
         className="select"
