@@ -4,6 +4,7 @@ import NextQuestion from "../buttons/NextQuestion";
 import arrayShuffle from "array-shuffle";
 import Choices from "./Choices";
 import { CorrectAnswersContext } from "../context/correct-answers";
+import Troll from "../buttons/Troll";
 
 const Question = ({ question, id }) => {
   const questionId = parseInt(id);
@@ -36,6 +37,9 @@ const Question = ({ question, id }) => {
           <PreviousQuestion previousQuestionId={previousQuestionId} />
         )}
         {questionId < 10 && <NextQuestion nextQuestionId={nextQuestionId} />}
+      </div>
+      <div className="troll-button">
+        <Troll />
       </div>
     </div>
   );
