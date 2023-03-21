@@ -30,13 +30,13 @@ const Question = ({ question, id }) => {
         />
       </div>
 
-      <div className="nav-buttons">
+      <div className="nav button">
         {questionId >= 1 && (
           <PreviousQuestion previousQuestionId={previousQuestionId} />
         )}
         {questionId < 10 && <NextQuestion nextQuestionId={nextQuestionId} />}
       </div>
-      <div className="troll-button">
+      <div className="troll button">
         <Troll />
       </div>
     </div>
