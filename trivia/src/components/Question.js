@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import PreviousQuestion from "../buttons/PreviousQuestion";
 import NextQuestion from "../buttons/NextQuestion";
 import arrayShuffle from "array-shuffle";
-
 import Choices from "./Choices";
 import { CorrectAnswersContext } from "../context/correct-answers";
 
@@ -22,9 +21,8 @@ const Question = ({ question, id }) => {
       <div>
         <h1>Question #{questionId + 1}</h1>
         <p>Questions's category: {question.category}</p>
-        <p>Correct answers : {correctAnswers.length}</p>
       </div>
-      <p>{question.question}</p>
+      <p className="question">{question.question}</p>
       <div className="answers-container">
         <Choices
           answersArray={shuffledAnswers}
@@ -37,7 +35,7 @@ const Question = ({ question, id }) => {
         {questionId >= 1 && (
           <PreviousQuestion previousQuestionId={previousQuestionId} />
         )}
-        {questionId < 9 && <NextQuestion nextQuestionId={nextQuestionId} />}
+        {questionId < 10 && <NextQuestion nextQuestionId={nextQuestionId} />}
       </div>
     </div>
   );

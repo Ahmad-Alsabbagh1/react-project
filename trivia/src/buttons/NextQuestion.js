@@ -3,8 +3,10 @@ import React from "react";
 
 const NextQuestion = ({ nextQuestionId }) => {
   return (
-    <Link to={`/questions/${nextQuestionId}`}>
-      <button>Next Question</button>
+    <Link
+      to={nextQuestionId !== 10 ? `/questions/${nextQuestionId}` : `/finalPage`}
+    >
+      <button>{nextQuestionId === 10 ? "Finish" : "Next question"}</button>
     </Link>
   );
 };

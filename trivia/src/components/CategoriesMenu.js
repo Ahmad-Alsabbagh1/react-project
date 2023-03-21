@@ -20,7 +20,7 @@ const CategoriesMenu = () => {
   ];
   return (
     <div className="categories menu">
-      <p className="optional">Optional:</p>
+      <p className="optional">Optional</p>
       <label>Select categorie(s): </label>
       <Select
         options={options}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +21,7 @@ const useFetch = (url) => {
         setIsLoading(false);
         setError(e.message);
       });
-  }, []);
+  }, [url]);
   return { data, error, isLoading };
 };
 

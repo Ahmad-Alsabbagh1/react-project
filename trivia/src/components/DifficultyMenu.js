@@ -17,11 +17,11 @@ const DifficultyMenu = () => {
       <p className="emoji">{difficultyEmoji}</p>
       <Select
         options={options}
-        onChange={(e) => {
-          setDifficulty(e.value);
-          e.value === "easy" && setDifficultyEmoji("👶");
-          e.value === "medium" && setDifficultyEmoji("👨");
-          e.value === "hard" && setDifficultyEmoji("🧠");
+        onChange={(selected) => {
+          setDifficulty(selected.value);
+          selected.value === "easy" && setDifficultyEmoji("👶");
+          selected.value === "medium" && setDifficultyEmoji("👨");
+          selected.value === "hard" && setDifficultyEmoji("🧠");
         }}
         className="select"
       />
