@@ -5,7 +5,6 @@ import { CategoryContext } from "../context/category";
 const CategoriesMenu = () => {
   const [categories, setCategories] = useContext(CategoryContext);
 
-
   const options = [
     { value: "arts_and_literature", label: "Arts & Literature" },
     { value: "film_and_tv", label: "Film & TV" },

@@ -13,9 +13,8 @@ const Questions = () => {
   const [categories, setCategories] = useContext(CategoryContext);
   const { id } = useParams();
 
-  const categoriesToBeFetched = categories;
   const url = `https://the-trivia-api.com/api/questions?${
-    categories.length > 0 && `categories=${categoriesToBeFetched}&`
+    categories.length > 0 && `categories=${categories}&`
   }limit=10&difficulty=${difficulty}`;
 
   const { data, error, isLoading } = useFetch(url);

@@ -3,7 +3,6 @@ import PreviousQuestion from "../buttons/PreviousQuestion";
 import NextQuestion from "../buttons/NextQuestion";
 import arrayShuffle from "array-shuffle";
 import Choices from "./Choices";
-
 import Troll from "../buttons/Troll";
 
 const Question = ({ question, id }) => {
@@ -29,7 +28,6 @@ const Question = ({ question, id }) => {
           questionId={questionId}
         />
       </div>
-
       <div className="nav button">
         {questionId >= 1 && (
           <PreviousQuestion previousQuestionId={previousQuestionId} />

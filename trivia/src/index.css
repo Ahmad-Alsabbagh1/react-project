@@ -80,7 +80,8 @@ gap: 70px ;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 45vw;
+  width: 38vw;
+
 }
 .answers-container button{
   width: 220px;
@@ -89,6 +90,7 @@ gap: 70px ;
   color: white;
   min-height: 75px;
   margin: 5px 5px;
+  letter-spacing: 0.5px;
 }
 .active{
   background-color: gray;
@@ -115,4 +117,11 @@ button{
   align-self: center;
   font-size: 2rem;
   margin: 150px;
+}
+@media (max-width: 600px) {
+  header p{
+    margin-top:25px;
+    font-size: 1.3rem;
+  }
+  
 }

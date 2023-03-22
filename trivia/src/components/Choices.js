@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { CorrectAnswersContext } from "../context/correct-answers";
-
 import { Link } from "react-router-dom";
 
 const Choices = ({ answersArray, correctAnswer, questionId }) => {

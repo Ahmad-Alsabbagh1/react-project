@@ -20,10 +20,9 @@ const FinalPage = () => {
         {"You answered " + correctAnswers.length + " questions correct!"}
       </p>
       <p className="feedback">
-        {correctAnswers.length <= 3 && "Better luck next time :("}
-        {6 >= correctAnswers.length >= 4 && "Not bad but you can do better!"}
-        {7 >= correctAnswers.length >= 6 && "Well done, impressive!"}
-        {correctAnswers.length >= 8 && "Genius!"}
+        {correctAnswers.length > 6
+          ? "Well done, impressive!"
+          : "You can do better!, Better luck next time :("}
       </p>
       <Link to="/">
         <button className="final button" onClick={handleClick}>
