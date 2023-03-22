@@ -19,6 +19,6 @@ Note!, Watch out for the easter egg.
 If you wish to suggest changes to my website you can clone it by following these steps:
 1. Press the green button top right and choose your prefered cloning methode, I suggest cloning using the SSH key. Copy the link.</br>
 2. Open the CMD and navigate to a place when you want the trivia to be cloned to.</br>
-3. To clone to the desktop navigate to the desktop by typing: `cd desktop`
+3. To clone to the desktop navigate to the desktop by typing: `cd Desktop`
 4. Type in your CMD: `git clone [link from step 1]` . </br>
 5. Wait a couple second and the source should be on your device!
