@@ -10,7 +10,7 @@ After answering all the questions you will be greeted with the results page and 
 
 The game is responsive and can be used on: phones, tablets, laptops, etc... .
 
-:point_right: [If you wish to try the website you can click here](https://eloquent-gnome-5859a4.netlify.app/) .
+:point_right: [If you wish to try the website you can click here](https://jovial-bubblegum-96ec8d.netlify.app/) .
 
 
 Note!, Watch out for the easter egg.
