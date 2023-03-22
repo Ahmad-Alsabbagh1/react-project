@@ -1,4 +1,4 @@
-# ~.~ AHMAD'S TRIVIA ~.~
+# "~.~" AHMAD'S TRIVIA "~.~"
 
 A trivia game made using React.js as a react-project for HackYourFuture.<br/>
 With the help of the [Trivia](https://the-trivia-api.com/) API the player gets 10 question with the selected difficulty(default = easy) or some selected categories(optional).
